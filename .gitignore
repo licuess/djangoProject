@@ -1,0 +1,5 @@
+# djangoProject
+djangoProject/__pycache__
+/log/*
+/settings/dev
+.idea

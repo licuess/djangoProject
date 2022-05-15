@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "djangoProject"
+version = "v1.0"
+description = "django project backend"
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.7.13"
+
+Django="3.1.13"
+djangorestframework="3.12.4"
+PyMySQL="1.0.2"
+drf_yasg="1.20.0"
+celery="5.2.6"
+

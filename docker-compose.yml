@@ -1,0 +1,32 @@
+version: "3.6"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: djangoproject
+    container_name: djangoproject
+    restart: always
+    ports:
+      - "12000:12000"
+    depends_on:
+      - db
+  db:
+    image: mysql
+    container_name: mysql
+    ports:
+      - "13306:3306"
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=dev
+      - MYSQL_USER=dev
+      - MYSQL_PASSWORD=123456
+      - MYSQL_ROOT_PASSWORD=123456
+    volumes:
+      - "/Users/rey/mysql_docker_database:/var/lib/mysql"
+
+networks:
+  djangoproject:
+    driver: bridge
