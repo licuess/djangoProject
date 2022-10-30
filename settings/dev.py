@@ -9,7 +9,10 @@ DATABASES = {
         "HOST": "localhost",
         "PORT": 3306,
         "USER": "root",
-        "PASSWORD": "liurun1990525",
+        "PASSWORD": "test",
     },
 }
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]

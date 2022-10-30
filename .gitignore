@@ -2,4 +2,7 @@
 djangoProject/__pycache__
 /log/*
 /settings/dev
-.idea
+.idea/*
+.fleet/*
+.vs/*
+/static/*
