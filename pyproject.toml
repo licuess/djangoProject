@@ -2,6 +2,7 @@
 name = "djangoProject"
 version = "v1.0"
 description = "django project backend"
+authors = ["rey"]
 
 # Requirements
 [tool.poetry.dependencies]
@@ -12,4 +13,6 @@ djangorestframework="3.12.4"
 PyMySQL="1.0.2"
 drf_yasg="1.20.0"
 celery="5.2.6"
+ruff="0.0.149"
+uwsgi="2.0.21" 
 

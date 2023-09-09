@@ -1,5 +1,3 @@
-from .base import *
-
 DEBUG = True
 
 DATABASES = {
@@ -9,10 +7,6 @@ DATABASES = {
         "HOST": "localhost",
         "PORT": 3306,
         "USER": "root",
-        "PASSWORD": "test",
+        "PASSWORD": "liurun1990525",
     },
 }
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
